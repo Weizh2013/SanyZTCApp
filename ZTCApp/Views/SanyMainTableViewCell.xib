@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="SanyMainTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="mainCell" id="KGk-i7-Jjw" customClass="SanyMainTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工地总数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RoQ-jD-EJG">
+                        <rect key="frame" x="10" y="5" width="245" height="33"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNY-hA-38n">
+                        <rect key="frame" x="260" y="7" width="50" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="AKE-kw-LgO" userLabel="width = 180"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.68235294117647061" green="0.68627450980392157" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="CNY-hA-38n" secondAttribute="trailing" constant="10" id="0ZF-TA-sas"/>
+                    <constraint firstItem="RoQ-jD-EJG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Kcx-Hc-Qrx"/>
+                    <constraint firstAttribute="bottom" secondItem="RoQ-jD-EJG" secondAttribute="bottom" constant="5" id="dvW-gn-8FC"/>
+                    <constraint firstItem="RoQ-jD-EJG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="hme-P7-UXW"/>
+                    <constraint firstItem="CNY-hA-38n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="kEt-59-z9W"/>
+                    <constraint firstItem="CNY-hA-38n" firstAttribute="leading" secondItem="RoQ-jD-EJG" secondAttribute="trailing" constant="5" id="oqT-PA-ybm"/>
+                    <constraint firstAttribute="bottom" secondItem="CNY-hA-38n" secondAttribute="bottom" constant="7" id="tum-WD-TCG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mainTitleLb" destination="RoQ-jD-EJG" id="uVL-hP-628"/>
+                <outlet property="numbersLb" destination="CNY-hA-38n" id="d3l-aZ-fw2"/>
+                <outlet property="numbersLbWidth" destination="AKE-kw-LgO" id="i6K-Uj-aNU"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

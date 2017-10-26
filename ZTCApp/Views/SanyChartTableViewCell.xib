@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="SanyChartTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="chartCell" id="KGk-i7-Jjw" customClass="SanyChartTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tj4-VL-jBf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYP-kq-KiT">
+                        <rect key="frame" x="110" y="169" width="100" height="30"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kt2-St-m0w">
+                                <rect key="frame" x="10" y="5" width="20" height="20"/>
+                                <color key="backgroundColor" red="0.28923215268687552" green="1" blue="0.35032339452569894" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="ahc-yZ-Pn3"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="趟次" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnr-39-TNb">
+                                <rect key="frame" x="35" y="5" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lnr-39-TNb" secondAttribute="bottom" constant="5" id="0al-W5-YVs"/>
+                            <constraint firstAttribute="width" constant="100" id="Atx-Bw-xbc"/>
+                            <constraint firstAttribute="trailing" secondItem="lnr-39-TNb" secondAttribute="trailing" id="N59-x0-MCK"/>
+                            <constraint firstAttribute="bottom" secondItem="Kt2-St-m0w" secondAttribute="bottom" constant="5" id="Scp-c8-Ghu"/>
+                            <constraint firstItem="lnr-39-TNb" firstAttribute="leading" secondItem="Kt2-St-m0w" secondAttribute="trailing" constant="5" id="TL8-yL-Lhm"/>
+                            <constraint firstItem="Kt2-St-m0w" firstAttribute="top" secondItem="cYP-kq-KiT" secondAttribute="top" constant="5" id="XoX-hW-4oy"/>
+                            <constraint firstItem="Kt2-St-m0w" firstAttribute="leading" secondItem="cYP-kq-KiT" secondAttribute="leading" constant="10" id="lEK-ZO-CrZ"/>
+                            <constraint firstItem="lnr-39-TNb" firstAttribute="top" secondItem="cYP-kq-KiT" secondAttribute="top" constant="5" id="qB1-oE-Gf8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="tj4-VL-jBf" secondAttribute="bottom" constant="30" id="0CF-G7-FQx"/>
+                    <constraint firstItem="tj4-VL-jBf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="80y-KQ-xyi"/>
+                    <constraint firstItem="cYP-kq-KiT" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="CRB-B9-RgW"/>
+                    <constraint firstAttribute="bottom" secondItem="cYP-kq-KiT" secondAttribute="bottom" id="tM2-fb-jlD"/>
+                    <constraint firstAttribute="trailing" secondItem="tj4-VL-jBf" secondAttribute="trailing" id="uJc-Dw-ESO"/>
+                    <constraint firstItem="tj4-VL-jBf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uVo-jI-hEn"/>
+                    <constraint firstItem="cYP-kq-KiT" firstAttribute="top" secondItem="tj4-VL-jBf" secondAttribute="bottom" id="z8a-3y-E8O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chartBgView" destination="tj4-VL-jBf" id="ijn-vJ-HUq"/>
+                <outlet property="chartColorLb" destination="lnr-39-TNb" id="c5B-SB-HsD"/>
+                <outlet property="chartColorView" destination="Kt2-St-m0w" id="CGh-57-ihG"/>
+            </connections>
+            <point key="canvasLocation" x="521" y="456"/>
+        </tableViewCell>
+    </objects>
+</document>

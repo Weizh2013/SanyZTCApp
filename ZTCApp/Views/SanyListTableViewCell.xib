@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SanyListCell" id="KGk-i7-Jjw" customClass="SanyListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开福区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwh-iC-kXb">
+                        <rect key="frame" x="124" y="2" width="146" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="位置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODI-TP-J43">
+                        <rect key="frame" x="272" y="2" width="48" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="工地1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5X0-4L-Xnz">
+                        <rect key="frame" x="0.0" y="2" width="120" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="Kmv-ol-Pdi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="fwh-iC-kXb" secondAttribute="bottom" constant="2" id="6fo-4d-XgJ"/>
+                    <constraint firstItem="fwh-iC-kXb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="8QS-q1-2kK"/>
+                    <constraint firstItem="ODI-TP-J43" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="99k-kC-cwf"/>
+                    <constraint firstAttribute="trailing" secondItem="fwh-iC-kXb" secondAttribute="trailing" constant="50" id="BYr-WO-ZfA"/>
+                    <constraint firstItem="ODI-TP-J43" firstAttribute="leading" secondItem="fwh-iC-kXb" secondAttribute="trailing" constant="2" id="CMF-Ks-ICA"/>
+                    <constraint firstItem="fwh-iC-kXb" firstAttribute="leading" secondItem="5X0-4L-Xnz" secondAttribute="trailing" constant="2" id="OKb-Kn-0VW"/>
+                    <constraint firstAttribute="bottom" secondItem="ODI-TP-J43" secondAttribute="bottom" constant="2" id="Se6-8A-iMD"/>
+                    <constraint firstAttribute="bottom" secondItem="5X0-4L-Xnz" secondAttribute="bottom" constant="2" id="bew-4V-zax"/>
+                    <constraint firstItem="5X0-4L-Xnz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="hIy-vT-Oh0"/>
+                    <constraint firstAttribute="trailing" secondItem="ODI-TP-J43" secondAttribute="trailing" id="r04-L9-bOT"/>
+                    <constraint firstItem="5X0-4L-Xnz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="xLt-xw-qXE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLb" destination="5X0-4L-Xnz" id="mb1-bv-uhH"/>
+                <outlet property="placeLb" destination="fwh-iC-kXb" id="lYw-bO-sgi"/>
+                <outlet property="positionLb" destination="ODI-TP-J43" id="ehm-iG-1fj"/>
+            </connections>
+            <point key="canvasLocation" x="454" y="429"/>
+        </tableViewCell>
+    </objects>
+</document>
